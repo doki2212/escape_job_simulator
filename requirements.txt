@@ -1,0 +1,10 @@
+# Core browser automation
+playwright==1.48.0
+# Test runner 
+pytest==8.3.3
+# Environment variables 
+python-dotenv==1.0.1
+# File system watcher for resume folder monitoring
+watchdog==5.0.3
+# Pdf reading
+pdfplumber==0.11.4

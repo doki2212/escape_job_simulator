@@ -1,0 +1,10 @@
+# Virtual environment
+venv/
+__pycache__/
+*.pyc
+
+# Playwright storage (login sessions)
+storage/
+
+# Environment variables
+.env
