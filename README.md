@@ -56,20 +56,30 @@ The project intentionally avoids full hands-free automation for job applications
 
 ---
 
+## Project Structure
+
 src/
 ├── core/
-│ └── browser.py # Playwright setup & session handling
+│   └── browser.py
+│       Playwright setup and session handling
+│
 ├── sites/
-│ ├── naukri_open_home.py # Open Naukri & navigate to Recommended Jobs
-│ ├── naukri_resume_upload.py # Conditional resume upload logic
-│ └── naukri_setup_login.py # One-time manual login & session save
+│   ├── naukri_open_home.py
+│   │   Open Naukri and navigate to Recommended Jobs
+│   ├── naukri_resume_upload.py
+│   │   Conditional resume upload logic
+│   └── naukri_setup_login.py
+│       One-time manual login and session save
+│
 ├── utils/
-│ ├── keyword_extractor.py # Resume text + keyword matching
-│ ├── resume_check.py # Resume freshness check
-│ └── run_keyword_extraction.py
-├── run_all.py # Central pipeline runner
-
-
+│   ├── keyword_extractor.py
+│   │   Resume text extraction and keyword matching
+│   ├── resume_check.py
+│   │   Resume freshness check logic
+│   └── run_keyword_extraction.py
+│
+└── run_all.py
+    Central pipeline runner
 ---
 
 ## How It Works (High Level)
@@ -132,5 +142,5 @@ Built as a learning and portfolio project to explore:
 - controlled human-in-the-loop workflows
 
 
-## Project Structure
+
 
